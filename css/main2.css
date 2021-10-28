@@ -1,0 +1,161 @@
+*{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+    
+header{
+    font-size: 2em;     
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-family: 'Bonheur Royale', cursive;
+    width: 100%;
+}
+
+/*-------ESTE ES UN ID---------/*
+/*cambie solo el botoncito contactame*/
+#contact01{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px;
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+/* cambio de color*/
+@keyframes changeColor{
+    from{
+        background-color: orange;   
+         }
+    to  {
+        background-color: red;
+        }
+    }
+/*cambie los botoncitos de contacto y acerca de mi*/
+
+.botoncito{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px;
+    }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'grid-item grid-item grid-item grid-item';
+    width: 70%;
+    gap: 10px;
+    padding: 20px;
+    margin: 0% auto;
+    background-position: left center;
+}
+
+.grid-item img{
+
+    width: 55px;
+    height: 50px;
+    border-radius: 70%;    
+    min-height: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    background-position: center center;
+    border: solid 2px black;    
+    
+}
+
+.galeria_titulo{
+    display: none;
+}
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+        }
+.myDiv
+{ 
+    border: 5px outset lightgreen;
+    background-color: orange;
+    text-align: center;
+    width: 90%;
+    margin: 0% auto;
+
+    }
+    
+footer{
+        font-size: 2em;  
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+        padding: 20px;
+        background: white;   
+     }
+
+@media screen and (min-width: 600px){
+
+
+    .botoncito{
+        padding: 8px;
+    }
+    #contact01{
+        padding: 8px;
+    }
+    .grid-container{
+        gap: 20px;  
+        padding: 20px;
+        width: 80%;
+        max-width: 1500px;
+        margin: 0% auto;
+        }
+    .grid-item img{      
+        margin: 0% auto;
+        width: 95px;
+        height: 85px;
+        }
+    .galeria_titulo{
+        display: block;
+        position: absolute;
+        color: black;  
+        font-size: medium; 
+    }
+
+    .myDiv{ 
+        width: 80%;
+        }
+}
+
+@media screen and (min-width: 768px){
+
+   header{
+    font-size: 3em;     
+    padding: 5px;
+   }
+   .grid-container{
+        gap: 25px;  
+        padding: 25px;
+        width: 90%;
+        }
+    .grid-item img{
+        border-radius: 50%;
+        min-height: 150px;
+        width: 140px;
+        height: 95px;
+
+        }
+    .galeria_titulo{
+        font-size:x-large;
+    }
+    
+    .myDiv{ 
+        width: 80%;
+        }
+
+}
